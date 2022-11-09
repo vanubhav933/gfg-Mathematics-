@@ -1,0 +1,14 @@
+//to print all the primes before a given number
+public void sieve(int num){
+  boolean [] is_prime=new boolean[num+1];
+  for(int i=2;i*i<=num;i++){
+    if(is_prime[i]){
+      for(int j=i*i;j<=num;j=j+i){
+          is_prime[j]=false;
+          }
+      }
+   }
+   for(int i=2;i<=num;i++){
+    system.out.print(i+" ");
+    }
+ }
