@@ -9,6 +9,7 @@ public void sieve(int num){
       }
    }
    for(int i=2;i<=num;i++){
+    if(is_prime[i])
     system.out.print(i+" ");
     }
  }
